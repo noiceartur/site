@@ -30,12 +30,22 @@ function Contact() {
               Vamos conversar!
             </p>
             <div className="contact-detail" style={{ justifyContent: 'center' }}>
-              <div className="contact-detail-icon">📱</div>
-              <span>(61) 98275-6575</span>
+              <div className="contact-detail-icon">
+                <img src="/icones/whatsapp.png" alt="WhatsApp" style={{ width: 24, height: 24 }} />
+              </div>
+              <a href="https://wa.me/5561982756575" target="_blank" rel="noreferrer"
+                style={{ color: 'inherit', textDecoration: 'none' }}>
+                (61) 98275-6575
+              </a>
             </div>
             <div className="contact-detail" style={{ justifyContent: 'center' }}>
-              <div className="contact-detail-icon">💬</div>
-              <span>WhatsApp</span>
+              <div className="contact-detail-icon">
+                <img src="/icones/instagram.png" alt="Instagram" style={{ width: 24, height: 24 }} />
+              </div>
+              <a href="https://www.instagram.com/agua.de.coco.pura/" target="_blank" rel="noreferrer"
+                style={{ color: 'inherit', textDecoration: 'none' }}>
+                @agua.de.coco.pura
+              </a>
             </div>
             <div className="contact-detail" style={{ justifyContent: 'center' }}>
               <div className="contact-detail-icon">📍</div>
