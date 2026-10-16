@@ -3,17 +3,17 @@ import { useEffect, useRef } from 'react';
 const testimonials = [
   {
     stars: '★★★★★',
-    text: '"Nunca tomei uma água de coco tão doce e fresca. Dá pra sentir a diferença do produto colhido no dia. Virei cliente fiel!"',
-    initials: 'MA',
-    name: 'Mariana Alves',
-    role: 'Nutricionista, SP',
+    text: '"Melhor coco de arapongas"',
+    initials: 'SB',
+    name: 'Sarah Borba',
+    role: 'Integrante do grupo',
   },
   {
     stars: '★★★★★',
-    text: '"Uso na minha academia e os alunos adoram. A entrega é sempre pontual e a qualidade é impecável. Recomendo demais!"',
-    initials: 'RL',
-    name: 'Ricardo Lima',
-    role: 'Personal Trainer, RJ',
+    text: '"12/10"',
+    initials: 'JK',
+    name: 'Jerônimo Kaneko',
+    role: 'Integrante do grupo',
   },
   {
     stars: '★★★★★',
