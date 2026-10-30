@@ -29,7 +29,7 @@ return (
       {/* Bloco 1 — Benefícios: texto à esquerda, imagem à direita */}
       <div className="feature-block" id="beneficios">
         <div className="feature-text reveal">
-          <h3>Benefícios da água de coco</h3>
+          <h3>Benefícios da água de coco🤓☝️</h3>
           <p>
             A água de coco é uma das bebidas mais hidratantes que a natureza oferece.
             Rica em eletrólitos naturais como potássio, sódio e magnésio, ela repõe o
