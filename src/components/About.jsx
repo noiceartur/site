@@ -1,4 +1,5 @@
-import { useEffect, useRef } from 'react'; 
+import { useEffect, useRef } from 'react';
+import Photo from './Photo';
 
 function About() {
   const sectionRef = useRef(null);
@@ -46,14 +47,14 @@ return (
           </p>
         </div>
         <div className="feature-image reveal reveal-delay-1">
-          <img src="/imagens/beneficios-agua-coco.jpg" alt="Água de coco fresca e natural" />
+          <Photo src="/imagens/beneficios-agua-coco.jpg" alt="Água de coco fresca e natural" />
         </div>
       </div>
 
       {/* Bloco 2 — Produção: espelhado (imagem primeiro no HTML = imagem à esquerda) */}
       <div className="feature-block" id="producao">
         <div className="feature-image reveal">
-          <img src="/imagens/producao-coco.jpg" alt="Processo de produção da água de coco" />
+          <Photo src="/imagens/producao-coco.jpg" alt="Processo de produção da água de coco" />
         </div>
         <div className="feature-text reveal reveal-delay-1">
           <h3>Como produzimos</h3>

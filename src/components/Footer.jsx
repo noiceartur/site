@@ -1,21 +1,6 @@
+import { whatsappLink, scrollToId, PHONE_DISPLAY, INSTAGRAM_URL, INSTAGRAM_HANDLE } from '../config'
+
 function Footer() {
-  const scrollTo = (e, id) => {
-    e.preventDefault()
-    const el = document.querySelector(id)
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    window.history.replaceState(null, '', window.location.href.split('#')[0])
-  }
-
-  const goToProduct = (e, index) => {
-    e.preventDefault()
-    window.dispatchEvent(new CustomEvent('cocopura:expand-product', { detail: index }))
-    const el = document.querySelector('#produtos')
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      window.history.replaceState(null, '', window.location.href.split('#')[0])
-    }
-  }
-
   return (
     <footer className="footer">
       <div className="footer-grid">
@@ -25,34 +10,24 @@ function Footer() {
             CocoPura
           </div>
           <p className="footer-desc">
-            A melhor água de coco do Brasil, direto do coqueiral para a sua mesa.
+            Água de coco 100% natural, direto do coqueiral para a sua mesa.
             Frescura, sabor e saúde em cada gole.
           </p>
         </div>
         <div className="footer-col">
-          <h4>Empresa</h4>
-          <ul>
-            <li><a href="#sobre" onClick={(e) => scrollTo(e, '#sobre')}>Sobre Nós</a></li>
-            <li><a href="#" onClick={(e) => e.preventDefault()}>Nossa Fazenda</a></li>
-            <li><a href="#" onClick={(e) => e.preventDefault()}>Carreiras</a></li>
-            <li><a href="#" onClick={(e) => e.preventDefault()}>Blog</a></li>
-          </ul>
-        </div>
-        <div className="footer-col">
           <h4>Produtos</h4>
           <ul>
-            <li><a href="#produtos" onClick={(e) => goToProduct(e, 0)}>Coco com Canudo</a></li>
-            <li><a href="#produtos" onClick={(e) => goToProduct(e, 1)}>Garrafinha 500ml</a></li>
-            <li><a href="#produtos" onClick={(e) => goToProduct(e, 2)}>Garrafa 1L</a></li>
+            <li><a href="#produtos" onClick={(e) => scrollToId(e, '#produtos')}>Coco com Canudo</a></li>
+            <li><a href="#produtos" onClick={(e) => scrollToId(e, '#produtos')}>Garrafinha 500ml</a></li>
+            <li><a href="#produtos" onClick={(e) => scrollToId(e, '#produtos')}>Garrafa 1L</a></li>
           </ul>
         </div>
         <div className="footer-col">
           <h4>Contato</h4>
           <ul>
-            <li><a href="#" onClick={(e) => e.preventDefault()}>WhatsApp</a></li>
-            <li><a href="#" onClick={(e) => e.preventDefault()}>Instagram</a></li>
-            <li><a href="#" onClick={(e) => e.preventDefault()}>contato@cocopura.com</a></li>
-            <li><a href="#" onClick={(e) => e.preventDefault()}>(61) 98275-6575</a></li>
+            <li><a href={whatsappLink()} target="_blank" rel="noreferrer">{PHONE_DISPLAY}</a></li>
+            <li><a href={INSTAGRAM_URL} target="_blank" rel="noreferrer">{INSTAGRAM_HANDLE}</a></li>
+            <li><span className="footer-text">Taguatinga Norte — DF</span></li>
           </ul>
         </div>
       </div>

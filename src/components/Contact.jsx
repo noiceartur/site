@@ -1,4 +1,10 @@
 import { useEffect, useRef } from 'react'
+import {
+  whatsappLink,
+  PHONE_DISPLAY,
+  INSTAGRAM_URL,
+  INSTAGRAM_HANDLE,
+} from '../config'
 
 function Contact() {
   const ref = useRef(null)
@@ -22,36 +28,30 @@ function Contact() {
             Entre em contato para fazer seu pedido. Entregas e detalhes são discutidos diretamente.
           </p>
         </div>
-        <div className="contact-grid" style={{ gridTemplateColumns: '1fr', maxWidth: '600px', margin: '0 auto' }}>
-          <div className="contact-info reveal" style={{ textAlign: 'center' }}>
+        <div className="contact-grid contact-grid-single">
+          <div className="contact-info reveal">
             <h3>Entre em Contato</h3>
             <p>
               Estou pronto para atender sua demanda, seja para eventos, revenda ou consumo pessoal.
               Vamos conversar!
             </p>
-            <div className="contact-detail" style={{ justifyContent: 'center' }}>
-              <div className="contact-detail-icon">
+            <a className="contact-detail contact-link" href={whatsappLink()} target="_blank" rel="noreferrer">
+              <div className="contact-detail-icon icon-plain">
                 <img src="/icones/whatsapp.png" alt="WhatsApp" style={{ width: 24, height: 24 }} />
               </div>
-              <a href="https://wa.me/5561982756575" target="_blank" rel="noreferrer"
-                style={{ color: 'inherit', textDecoration: 'none' }}>
-                (61) 98275-6575
-              </a>
-            </div>
-            <div className="contact-detail" style={{ justifyContent: 'center' }}>
-              <div className="contact-detail-icon">
+              <span className="contact-link-text">{PHONE_DISPLAY}</span>
+            </a>
+            <a className="contact-detail contact-link" href={INSTAGRAM_URL} target="_blank" rel="noreferrer">
+              <div className="contact-detail-icon icon-plain">
                 <img src="/icones/instagram.png" alt="Instagram" style={{ width: 24, height: 24 }} />
               </div>
-              <a href="https://www.instagram.com/agua.de.coco.pura/" target="_blank" rel="noreferrer"
-                style={{ color: 'inherit', textDecoration: 'none' }}>
-                @agua.de.coco.pura
-              </a>
-            </div>
-            <div className="contact-detail" style={{ justifyContent: 'center' }}>
+              <span className="contact-link-text">{INSTAGRAM_HANDLE}</span>
+            </a>
+            <div className="contact-detail">
               <div className="contact-detail-icon">📍</div>
               <span>Taguatinga Norte — Distrito Federal</span>
             </div>
-            <div className="contact-detail" style={{ justifyContent: 'center' }}>
+            <div className="contact-detail">
               <div className="contact-detail-icon">🕐</div>
               <span>Seg — Sáb: 8h às 18h</span>
             </div>

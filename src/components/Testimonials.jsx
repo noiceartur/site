@@ -3,10 +3,10 @@ import { useEffect, useRef } from 'react';
 const testimonials = [
   {
     stars: '★★★★★',
-    text: '"Melhor coco de arapongas"',
-    initials: 'SB',
-    name: 'Sarah Borba',
-    role: 'Integrante do grupo',
+    text: '"Parece que estou na praia tomando água direto de um coco real"',
+    initials: 'LR',
+    name: 'Letícia Rossato',
+    role: 'Fotógrafa e Videomaker Imobiliário',
   },
   {
     stars: '★★★★★',
@@ -20,7 +20,7 @@ const testimonials = [
     text: '"Essa aqui tá top em👌"',
     initials: 'KG',
     name: 'Karython Gomes',
-    role: 'Professor e tutor no Senai',
+    role: 'professor universitário e instrutor de nível superior no SENAI'
   },
 ];
 
@@ -49,7 +49,7 @@ function Testimonials() {
             Depoimentos
           </span>
           <h2>O que nossos clientes dizem</h2>
-          <p className="subtitle">Mais de 10.000 pessoas já experimentaram a diferença da CocoPuro.</p>
+          <p className="subtitle">Quem já experimentou, aprova.</p>
         </div>
         <div className="testimonials-grid">
           {testimonials.map((t, i) => (
