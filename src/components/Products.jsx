@@ -7,7 +7,7 @@ const products = [
     id: 0,
     title: 'Coco Inteiro com Canudo',
     subtitle: 'Mais Vendido',
-    desc: 'Coco verde fresco, aberto na hora e pronto para consumo. Acompanha canudo biodegradável.',
+    desc: 'Coco verde fresco, aberto na hora e pronto para consumo.',
     price: 'R$ 8,00',
     image: '/imagens/produtos/coco.jpg',
   },
@@ -16,7 +16,7 @@ const products = [
     title: 'Garrafinha 500ml',
     subtitle: 'Prático',
     desc: 'Água de coco 100% natural em embalagem prática de 500ml. Ideal para levar para qualquer lugar.',
-    price: 'R$ 8,00',
+    price: 'R$ 10,00',
     image: '/imagens/produtos/garrafinha-500ml.jpg',
   },
   {
@@ -24,7 +24,7 @@ const products = [
     title: 'Garrafa 1 Litro',
     subtitle: 'Família',
     desc: 'Garrafa de 1 litro com água de coco natural. Perfeita para dividir em casa ou no escritório.',
-    price: 'R$ 15,00',
+    price: 'R$ 18,00',
     image: '/imagens/produtos/garrafa-1l.jpg',
   },
 ]

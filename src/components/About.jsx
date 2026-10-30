@@ -38,11 +38,11 @@ return (
           </p>
           <p>
             Leve e com poucas calorias, é uma ótima escolha para antes ou depois dos
-            treinos, nos dias quentes ou simplesmente como um hábito mais saudável no
+            treinos, nos dias quentes ou simplesmente, como um hábito mais saudável no
             lugar de bebidas industrializadas.
           </p>
           <p>
-            Cada gole traz o sabor puro do coco colhido no ponto certo — sem
+            Cada gole oferece o sabor puro do coco colhido no ponto certo — sem
             processamento industrial, sem aditivos, apenas a água de coco como ela é.
           </p>
         </div>

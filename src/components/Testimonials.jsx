@@ -17,7 +17,7 @@ const testimonials = [
   },
   {
     stars: '★★★★★',
-    text: '"Essa aqui tá top em👌"',
+    text: '"Essa aqui tá top hein👌"',
     initials: 'KG',
     name: 'Karython Gomes',
     role: 'professor universitário e instrutor de nível superior no SENAI'
